@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jmm.client.module.CommitGoldActivity">
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_has_default_back="true"
+        app:toolbar_title_text="提交保证金"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="6dp"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:paddingTop="14dp"
+        android:text="20.00"
+        android:textSize="@dimen/text_20"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="首次出价需要你缴纳保证金，拍卖不成功将返回，如果你卖的是假货，这些保证金也将不返回。"
+        android:textSize="@dimen/text_12"
+        />
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/iv_sysinfo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_wxchat"
+            />
+
+        <TextView
+            android:id="@+id/tv_sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_sysinfo"
+            android:text="微信支付"
+            android:textColor="@color/bar_grey_90"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@+id/iv_sysinfo"
+            android:text="推荐微信版本8.0以上"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/commit_iv_wxpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/checkbox_selector"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/iv_sysinfo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_alipay"
+            />
+
+        <TextView
+            android:id="@+id/tv_sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_sysinfo"
+            android:text="支付宝支付"
+            android:textColor="@color/bar_grey_90"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_sysinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@+id/iv_sysinfo"
+            android:text="推荐支付宝版本9.0以上"
+            android:textColor="#A4A4A4"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/commit_iv_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/checkbox_selector"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="1.保证金是参加拍卖活动的基础，任何拍卖活动都需要缴纳保证金，保证金的金额不是一成不变的，可以查看保证金相关须知。\n\n2.保证金是参加拍卖活动的基础，任何拍卖活动都需要缴纳保证金，保证金的金额不是一成不变的，可以查看保证金相关须知。"
+        android:textSize="@dimen/text_12"
+        />
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/commit_tv_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ripple_but_red"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="缴纳保证金"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"
+        />
+</LinearLayout>

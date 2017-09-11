@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/base_toolbar"/>-->
+    <com.jmm.client.widget.ToolBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_has_default_back="true"
+        app:toolbar_title_text="填写回购信息"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="填写回购信息"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2.5"
+            android:text="熊猫纪念币"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="最高回购价格"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2.5"
+            android:text="500.00"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_14"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="回购信息"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/text_16"/>
+
+    <com.jmm.client.widget.MediaSelectLayout
+        android:id="@+id/selectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:column="4"
+        app:fl_horizontalChildGap="5dp"
+        app:image_maxCount="5"
+        app:select_type="image"/>
+
+
+</LinearLayout>

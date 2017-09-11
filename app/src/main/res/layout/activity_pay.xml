@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jmm.client.module.order.activity.PayActivity">
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_has_default_back="true"
+        app:toolbar_title_text="支付中心"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="订单金额"
+            android:textSize="@dimen/text_16"
+            />
+
+        <TextView
+            android:id="@+id/pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:text="¥：610.00"
+            android:textColor="#E01C1C"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="12dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="选择支付方式"
+        android:textSize="@dimen/text_16"
+        />
+
+    <View
+        style="@style/divider_h"
+        />
+
+    <TextView
+        android:id="@+id/tv_yue"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/ripple_white"
+        android:drawableLeft="@drawable/icon_yue"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/icon_more_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="余额支付"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/text_16"/>
+
+    <View
+        style="@style/divider_h"
+        />
+
+    <TextView
+        android:id="@+id/tv_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/ripple_white"
+        android:drawableLeft="@drawable/icon_alipay"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/icon_more_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="支付宝支付"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/text_16"
+        />
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_wx_pay"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/ripple_white"
+        android:drawableLeft="@drawable/icon_wxpay"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/icon_more_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="微信支付"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/text_16"/>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_bank_pay"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/ripple_white"
+        android:drawableLeft="@drawable/icon_bankpay"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/icon_more_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="银行卡支付"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/text_16"/>
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

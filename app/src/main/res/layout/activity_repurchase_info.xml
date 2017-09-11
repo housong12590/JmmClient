@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jmm.client.module.gold.activity.RepurchaseInfoActivity">
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_has_default_back="true"
+        app:toolbar_title_text="回购信息">
+    </com.jmm.client.widget.ToolBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="false"
+            android:padding="8dp"
+            android:text="已选择网点：北京银行顺义支行"
+            android:textColor="@color/bar_grey_90"
+            android:textSize="@dimen/text_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_revise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_white"
+            android:padding="8dp"
+            android:text="修改"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_14"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="回购产品信息"
+                android:textColor="@color/black_26"
+                android:textSize="@dimen/text_14"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/edit_bg"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="黄金重量(g)："
+                        android:textColor="@color/black_26"
+                        />
+
+                    <EditText
+                        android:digits="1234567980."
+                        android:id="@+id/edit_gold_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:maxLength="11"
+                        android:focusable="false"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="上传商品外观"
+                    android:textColor="@color/black_26"
+                    />
+
+                <com.jmm.client.widget.MediaSelectLayout
+                    android:id="@+id/media_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:select_type="image"
+                    app:column="4"
+                    app:image_maxCount="8"
+                    >
+                </com.jmm.client.widget.MediaSelectLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="(注：不少于四张，包含发票)"
+                    android:textColor="@color/edit_hint"
+                    android:textSize="@dimen/text_12"
+                    />
+            </LinearLayout>
+
+            <View
+                style="@style/divider_h"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="产品分类"/>
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="金银首饰类"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/iv_category1"
+                    android:background="@drawable/checkbox_selector"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.97"
+                    android:padding="10dp"
+                    android:text="金银首饰类"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:id="@+id/iv_category2"
+                    android:background="@drawable/checkbox_selector"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+
+            <View
+                style="@style/divider_h"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="回购方式"/>
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="送货上门"/>
+
+                <ImageView
+                    android:id="@+id/iv_style1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="快递"/>
+
+                <ImageView
+                    android:id="@+id/iv_style2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_next"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ripple_but_red"
+        android:text="下一步"/>
+</LinearLayout>

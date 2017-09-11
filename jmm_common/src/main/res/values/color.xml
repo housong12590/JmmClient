@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="link_text_press_color">#801B88EE</color>
+    <color name="link_text_normal_color">#1B88EE</color>
+    <color name="link_bg_press_color">#ececec</color>
+    <color name="link_bg_normal_color">#00000000</color>
+</resources>

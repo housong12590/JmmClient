@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="#CC6622"
+    ><!-- 按压的颜色 -->
+    <!-- 底部背景的drawable/color/bitmap -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/but_bg"/>
+        </shape>
+    </item>
+</ripple>

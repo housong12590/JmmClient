@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <com.jmm.client.widget.CircleImageView
+        android:id="@+id/produc_detail_iv_portrait"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="6dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/produc_detail_iv_portrait"
+        android:text="踏月偷心"
+        android:textSize="@dimen/text_12"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/produc_detail_iv_portrait"
+        android:text="你确定这些古董在你家地底下挖出来的？ 我感觉是假的"
+        android:textSize="@dimen/text_14"
+        />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="1小时前"
+        android:paddingRight="10dp"
+        android:textColor="@color/edit_hint"
+        android:textSize="@dimen/text_12"
+        />
+</RelativeLayout>

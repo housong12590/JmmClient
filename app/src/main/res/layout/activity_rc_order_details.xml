@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:toolbar_title_text="黄金回购订单"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow_f0"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:drawableLeft="@drawable/sel"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="待审核"
+            android:textColor="@color/yellow_ff"
+            android:textSize="@dimen/text_16"
+            />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:focusable="false"
+                android:padding="12dp"
+                android:text="已选择网点：北京银行顺义支行"
+                android:textSize="@dimen/text_16"
+                />
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="回购黄金克重（g）：200g"
+                android:textSize="@dimen/text_16"
+                />
+
+            <View
+                style="@style/divider_h"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="产品外观"
+                android:textSize="@dimen/text_18"
+                />
+
+            <com.jmm.client.widget.NoScrollRecyclerView
+                android:id="@+id/rv_outline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.jmm.client.widget.NoScrollRecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="个人信息"
+                android:textColor="@color/bar_grey_90"
+                android:textSize="@dimen/text_18"
+                />
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="姓名"
+                    android:textSize="@dimen/text_14"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="金买卖"
+                    android:textColor="@color/black_26"
+                    android:textSize="@dimen/text_16"
+                    />
+            </LinearLayout>
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="地址"
+                    android:textSize="@dimen/text_14"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="北京市昌平区西三旗回龙观"
+                    android:textColor="@color/black_26"
+                    android:textSize="@dimen/text_16"
+                    />
+            </LinearLayout>
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="手机号"
+                    android:textSize="@dimen/text_14"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="1841037****"
+                    android:textColor="@color/black_26"
+                    android:textSize="@dimen/text_16"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="订单编号：3123132132132"
+                android:textColor="@color/bar_grey_90"
+                android:textSize="@dimen/text_16"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="订单日起：2017-8-25"
+                android:textColor="@color/bar_grey_90"
+                android:textSize="@dimen/text_16"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_close_order"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_black_bg"
+            android:text="关闭订单"
+            android:textColor="@color/bar_grey_90"
+            />
+
+        <TextView
+            android:id="@+id/tv_grcode"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_but_red"
+            android:text="查看二维码凭证"/>
+
+    </LinearLayout>
+</LinearLayout>

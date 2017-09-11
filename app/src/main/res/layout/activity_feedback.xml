@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/base_toolbar"/>-->
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_has_default_back="true"
+        app:toolbar_title_text="反馈和建议"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="反馈问题类型"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/text_16"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_feedback_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="新想法建议"
+            android:textColor="@color/feedback_tab_text_color"
+            android:textSize="@dimen/text_12"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_feedback_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="功能不足"
+            android:textColor="@color/feedback_tab_text_color"
+            android:textSize="@dimen/text_12"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_feedback_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="体验不好"
+            android:textColor="@color/feedback_tab_text_color"
+            android:textSize="@dimen/text_12"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_feedback_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="其他"
+            android:textColor="@color/feedback_tab_text_color"
+            android:textSize="@dimen/text_12"/>
+
+
+    </RadioGroup>
+
+    <com.jmm.client.widget.StatisticsEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:minHeight="150dp"
+        app:hint="我们非常注重您的意见和建议，把您的想法告诉我们，将有利于我们更新改进方案，提升用户体验!"
+        app:max_length="600"/>
+
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="您的联系方式"
+        android:textColor="@color/black_26"/>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="50dp"
+        android:text="@string/commit"/>
+
+</LinearLayout>

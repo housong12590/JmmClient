@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/base_toolbar"/>-->
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_has_default_back="true"
+        app:toolbar_title_text="发布"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:hint="#标题品类品牌规格用途名称等#"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black_26"
+                android:textColorHint="@color/edit_hint"
+                android:textSize="@dimen/text_14"/>
+
+            <View
+                style="@style/divider_h"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="left|top"
+                android:hint="#描述您发布产品的详情#"
+                android:minHeight="100dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black_26"
+                android:textColorHint="@color/edit_hint"
+                android:textSize="@dimen/text_14"/>
+
+            <com.jmm.client.widget.MediaSelectLayout
+                android:id="@+id/customLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                app:column="4"
+                app:fl_horizontalChildGap="5dp"
+                app:fl_verticalChildGap="5dp"
+                app:image_maxCount="50"
+                app:select_type="all"
+                app:video_maxCount="1"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:drawableLeft="@drawable/icon_address"
+                android:drawablePadding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="定位中..."
+                android:textColor="@color/black_26"
+                android:textSize="@dimen/text_12"/>
+
+            <View
+                style="@style/divider_h"
+                android:layout_height="10dp"
+                android:layout_marginTop="15dp"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/yellow_ff"
+                app:tabSelectedTextColor="@color/yellow_ff"
+                app:tabTextColor="@color/gray_66"/>
+            <View
+                style="@style/divider_h"/>
+
+            <com.jmm.client.widget.ChildViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <TextView
+            style="@style/ButtonStyle"
+            android:text="确定发布"/>
+
+    </LinearLayout>
+
+</LinearLayout>

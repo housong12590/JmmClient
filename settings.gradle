@@ -1,0 +1,1 @@
+include ':app', ':jmm_common', ':jmm_chatui', ':picture_library'

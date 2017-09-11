@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jmm.client.module.user.activity.SetPayPwdActivity">
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:id="@+id/jmmToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_has_default_back="true"
+        app:toolbar_title_text="验证新6位数字支付密码">
+    </com.jmm.client.widget.ToolBarLayout>
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="验证新6位数字支付密码"/>
+
+    <com.jmm.client.widget.PasswordEditText
+        android:id="@+id/et_pay"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="12dp"
+        android:maxLength="6"
+        android:background="@null"
+        app:bgColor="@color/yellow_ff"
+        app:bgCorner="0dp"
+        />
+    <TextView
+        android:id="@+id/tv_complete"
+        android:text="完成"
+        style="@style/ButtonStyle"
+        android:background="@color/edit_hint"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.jmm.client.widget.KeyboardView
+        android:id="@+id/pay_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.jmm.client.widget.KeyboardView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jmm.client.widget.NoScrollViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"/>
+        <View
+            style="@style/divider_h"/>
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    style="@style/main_tab_radio"
+                    android:drawableTop="@drawable/select_tab_home"
+                    android:text="@string/home"/>
+
+                <RadioButton
+                    android:id="@+id/rb_circle"
+                    style="@style/main_tab_radio"
+                    android:drawableTop="@drawable/select_tab_home"
+                    android:text="@string/circle"/>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+                <RadioButton
+                    android:id="@+id/rb_message"
+                    style="@style/main_tab_radio"
+                    android:drawableTop="@drawable/select_tab_home"
+                    android:text="@string/message"/>
+
+                <RadioButton
+                    android:id="@+id/rb_mine"
+                    style="@style/main_tab_radio"
+                    android:drawableTop="@drawable/select_tab_home"
+                    android:text="@string/mine"/>
+            </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:drawablePadding="2dp"
+        android:drawableTop="@drawable/icon_issue"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="@string/issue"
+        android:textColor="@color/black_26"
+        android:textSize="@dimen/text_12"/>
+
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:id="@+id/state_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <com.jmm.client.widget.ToolBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            app:toolbar_has_default_back="true"
+            app:toolbar_title_color="@color/black_26"
+            app:toolbar_title_gravity="center"
+            app:toolbar_title_text="单品详情"
+            >
+        </com.jmm.client.widget.ToolBarLayout>
+
+        <TextView
+            android:background="@color/white"
+            android:visibility="invisible"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_16"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="right"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/divider_h"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_but_red"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="立即参与"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>
+

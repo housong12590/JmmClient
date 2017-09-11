@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jmm.client.module.gold.activity.RepurchaseInputInfoActivity">
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_title_text="填写回购信息"
+        >
+    </com.jmm.client.widget.ToolBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="个人信息填写"
+        android:textColor="@color/bar_grey_90"
+        android:textSize="@dimen/text_18"
+        />
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="姓名"
+            android:textColor="@color/bar_grey_90"
+            android:textSize="@dimen/text_16"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="地址"
+            android:textColor="@color/bar_grey_90"
+            android:textSize="@dimen/text_16"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="手机号"
+            android:textColor="@color/bar_grey_90"
+            android:textSize="@dimen/text_16"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="number"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="输入短信验证码"
+            android:textColor="@color/bar_grey_90"
+            android:textSize="@dimen/text_14"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="@color/yellow_ff"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="6dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="6dp"
+            android:text="输入短信验证码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="上传身份证号"
+        android:textColor="@color/bar_grey_90"
+        android:textSize="@dimen/text_18"
+        />
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <FrameLayout
+            android:background="@drawable/ripple_white"
+            android:id="@+id/fl_front"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="上传正面"
+                />
+
+            <ImageView
+                android:id="@+id/iv_front"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                />
+
+            <ImageButton
+                android:id="@+id/ib_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:padding="12dp"/>
+        </FrameLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            style="@style/divider_h"
+            />
+
+        <FrameLayout
+            android:background="@drawable/ripple_white"
+            android:id="@+id/fl_reverse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="上传反面"
+                />
+
+            <ImageView
+                android:id="@+id/iv_reverse"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/ib_reverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:padding="12dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+    <View
+        style="@style/divider_h"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="提交既表明你同意《回购协议》"
+        android:textSize="@dimen/text_12"
+        />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="10dp"
+        android:text="提交申请"
+        />
+
+
+</LinearLayout>
+

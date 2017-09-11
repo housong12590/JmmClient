@@ -1,0 +1,161 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarNavigationButtonStyle">@style/ToolbarNavigationButtonStyle</item>
+        <item name="toolBarStyle">@style/ToolBarStyle</item>
+    </style>
+
+
+    <!--attrs-->
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="StatisticsEditText">
+        <attr name="max_length" format="integer"/>
+        <attr name="hint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MediaSelectLayout">
+        <attr name="column" format="integer"/>
+        <attr name="image_maxCount" format="integer"/>
+        <attr name="video_maxCount" format="integer"/>
+        <attr name="select_type">
+            <enum name="image" value="0"/>
+            <enum name="video" value="1"/>
+            <enum name="all" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="fl_horizontalChildGap" format="dimension"/>
+        <attr name="fl_verticalChildGap" format="dimension"/>
+        <attr name="fl_isDistributionWhiteSpacing" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--style-->
+
+
+    <style name="comment_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="RadingStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/drawable_ratingbar</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">30dp</item>
+    </style>
+
+    <style name="main_tab_radio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/main_tab_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_12</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="divider_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+
+    <style name="ToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ripple_but_red</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <!-- Dialog style-->
+    <style name="Theme.Light.NoTitle.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="Animation.Bottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_up_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_down_out</item>
+    </style>
+
+    <style name="ToolBarStyle">
+        <item name="toolbar_height">48dp</item>
+        <!--只作用于left right-->
+        <item name="toolbar_padding">10dp</item>
+        <!--只作用于left right-->
+        <item name="toolbar_menu_margin">0dp</item>
+        <item name="toolbar_background">#fff</item>
+        <item name="toolbar_title_color">#000</item>
+        <item name="toolbar_title_gravity">left</item>
+        <item name="toolbar_btn_width">38dp</item>
+        <item name="toolbar_title_size">20sp</item>
+        <item name="toolbar_title_margin">10dp</item>
+        <item name="toolbar_back_image">@drawable/icon_back</item>
+        <item name="toolbar_menu_text_size">14sp</item>
+        <item name="toolbar_menu_text_color">#000</item>
+    </style>
+
+
+    <declare-styleable name="ToolBarLayout">
+        <attr name="toolBarStyle" format="reference"/>
+        <attr name="toolbar_height" format="dimension"/>
+        <attr name="toolbar_padding" format="dimension"/>
+        <attr name="toolbar_menu_margin" format="dimension"/>
+        <attr name="toolbar_background" format="color"/>
+        <attr name="toolbar_title_text" format="string"/>
+        <attr name="toolbar_title_color" format="color"/>
+        <attr name="toolbar_title_size" format="dimension"/>
+        <attr name="toolbar_btn_width" format="dimension"/>
+        <attr name="toolbar_title_margin" format="dimension"/>
+        <attr name="toolbar_back_image" format="reference"/>
+        <attr name="toolbar_menu_text_size" format="dimension"/>
+        <attr name="toolbar_has_default_back" format="boolean"/>
+        <attr name="toolbar_menu_text_color" format="color"/>
+        <attr name="toolbar_title_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

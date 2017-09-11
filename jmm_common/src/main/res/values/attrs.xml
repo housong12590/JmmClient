@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingView">
+        <attr name="loading_size" format="dimension"/>
+        <attr name="loading_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LinkTextView">
+        <attr name="link_BackgroundColor" format="color"/>
+        <attr name="link_TextColor" format="color"/>
+    </declare-styleable>
+</resources>

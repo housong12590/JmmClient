@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.jmm.client.widget.CircleImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="走在冷轰中"
+                    android:textColor="@color/black_26"
+                    android:textSize="@dimen/text_22"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="现居  北京   .  25岁"
+                    android:textColor="@color/black_26"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="钱包余额:200元"
+                android:textColor="@color/yellow_ff"
+                android:textSize="@dimen/text_16"/>
+
+        </LinearLayout>
+
+        <View style="@style/divider_h"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="被赞数"
+                android:textColor="@color/black_26"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="关注数"
+                android:textColor="@color/black_26"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="粉丝数"
+                android:textColor="@color/black_26"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="积分"
+                android:textColor="@color/black_26"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/divider_h"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_issue"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="我发布的"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View style="@style/divider_h"/>
+
+        <TextView
+            android:id="@+id/tv_sale"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="我卖出的"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View style="@style/divider_h"/>
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="我买到的"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View style="@style/divider_h"/>
+
+        <TextView
+            android:id="@+id/tv_attention"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="我关注的"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View style="@style/divider_h"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:drawableRight="@drawable/icon_more_gray"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:text="我的拍卖"-->
+        <!--android:textColor="@color/gray_66"-->
+        <!--android:textSize="@dimen/text_14"/>-->
+
+        <!--<View style="@style/divider_h"/>-->
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="我的订单"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View
+            style="@style/divider_h"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_returns_order"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="回购订单"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View style="@style/divider_h"/>
+
+        <TextView
+            android:id="@+id/tv_act_manage"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="活动管理"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View style="@style/divider_h"/>
+
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/icon_more_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="帮助与反馈"
+            android:textColor="@color/black_26"
+            android:textSize="@dimen/text_16"/>
+
+        <View style="@style/divider_h"/>
+
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:drawableRight="@drawable/icon_more_gray"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:text="我的投资"-->
+        <!--android:textColor="@color/gray_66"-->
+        <!--android:textSize="@dimen/text_14"/>-->
+
+        <View
+            style="@style/divider_h"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</ScrollView>

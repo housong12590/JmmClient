@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="分享"
+            android:textSize="@dimen/text_20"/>
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ripple_white"
+            android:padding="12dp"
+            android:src="@drawable/icon_delete"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_h"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/tv_share_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="微信好友"
+            />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/tv_share_wx_moments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="朋友圈"
+            />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/tv_share_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="QQ"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/tv_share_qzone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="QQ空间"
+            />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/tv_share_weibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="新浪微博"
+            />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/tv_share_alipay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="支付宝"
+            />
+    </LinearLayout>
+
+</LinearLayout>

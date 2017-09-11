@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jmm.client.module.user.activity.RegisterActivity">
+
+    <com.jmm.client.widget.ToolBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbar_title_text="注册金买卖账号"/>
+
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="phone"
+        android:layout_marginTop="50dp"
+        android:hint="请输入手机号"
+        android:textColor="@color/black"
+        android:textColorHint="@color/edit_hint"
+        android:textSize="@dimen/text_14"/>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_marginTop="6dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            android:textColorHint="@color/edit_hint"
+            android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送验证码"
+            android:background="@drawable/shape_btn_black_bg"
+            android:textSize="@dimen/text_14"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="40dp"
+        android:text="下一步"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="注册表示你同意"
+            android:textSize="@dimen/text_10"/>
+
+        <TextView
+            android:id="@+id/tv_regulations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="《隐私条例,服务条款》"
+            android:textSize="@dimen/text_10"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">JmmClient</string>
+    <string name="home">首页</string>
+    <string name="circle">圈子</string>
+    <string name="issue">发布</string>
+    <string name="message">消息</string>
+    <string name="mine">我的</string>
+    <string name="fixed_price">一口价</string>
+    <string name="category">分类</string>
+    <string name="please_select_category">请选择分类</string>
+    <string name="commit">提交</string>
+
+    <string name="permission_state">金买卖需要您的%1$s，请在\"设置-应用管理-金买卖-权限管理\"中开启对应的权限。</string>
+    <string name="affirm">确认</string>
+
+    <array name="issue_type_array">
+        <item>一口价</item>
+        <item>不开价</item>
+    </array>
+
+
+</resources>

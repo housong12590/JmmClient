@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请输入支付密码"
+            android:textSize="@dimen/text_16"
+            />
+    </RelativeLayout>
+
+    <com.jmm.client.widget.PasswordEditText
+        android:digits="0123456789"
+        android:id="@+id/dialog_payet"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="12dp"
+        android:maxLength="6"
+        android:background="@null">
+    </com.jmm.client.widget.PasswordEditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:gravity="right"
+        android:text="忘记密码?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/text_16"
+        />
+
+    <com.jmm.client.widget.KeyboardView
+        android:layout_marginTop="30dp"
+        android:id="@+id/pay_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.jmm.client.widget.KeyboardView>
+
+</LinearLayout>

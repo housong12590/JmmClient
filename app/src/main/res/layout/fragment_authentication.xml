@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="验证身份"
+        android:textSize="@dimen/text_12"/>
+
+    <View
+        style="@style/divider_h"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="手机验证"
+            android:textColor="@color/black_26"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="184****8683"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_btn_black_bg"
+            android:padding="8dp"
+            android:text="获取短信验证码"
+            android:textSize="@dimen/text_12"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/divider_h"/>
+
+    <EditText
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_btn_black_bg"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入刚刚的验证码"
+        android:inputType="number"
+        android:textSize="@dimen/text_12"
+        />
+
+    <TextView
+        android:id="@+id/tv_voice"
+        android:text="收不到短信，使用语音验证"
+        android:textSize="@dimen/text_10"
+        android:layout_marginRight="16dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_marginTop="50dp"
+        android:text="下一步"
+        style="@style/ButtonStyle"/>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_text" type="id"/>
+    <item name="menu_message" type="id"/>
+    <item name="menu_more" type="id"/>
+    <item name="menu_share" type="id"/>
+</resources>
