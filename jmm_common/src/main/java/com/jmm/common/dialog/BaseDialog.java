@@ -27,6 +27,9 @@ public abstract class BaseDialog extends Dialog {
         setCancelable(true);
         setCanceledOnTouchOutside(true);
         setContentView(getLayoutId());
+
+
+        ///
     }
 
     @Override
