@@ -28,7 +28,6 @@ public abstract class BaseDialog extends Dialog {
         setCanceledOnTouchOutside(true);
         setContentView(getLayoutId());
 
-
         ///
     }
 

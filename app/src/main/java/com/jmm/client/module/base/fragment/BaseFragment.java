@@ -118,7 +118,6 @@ public abstract class BaseFragment extends RxFragment implements BaseView {
         } else {
             ComponentName name = intent.getComponent();
             String className = name.getClassName();
-//            LogUtils.d("targetClass", className);
             intent.setClass(getActivity(), LoginActivity.class);
             intent.putExtra("targetClass", className);
             super.startActivity(intent);
